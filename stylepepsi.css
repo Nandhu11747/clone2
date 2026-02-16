@@ -4,6 +4,8 @@ body{
     overflow-x: hidden;
     font-family: Arial, sans-serif;
     background-color: black;
+    margin-top: 110px;
+
 }
 
 /*------NavBar------*/
@@ -13,8 +15,13 @@ body{
     display: flex;
     justify-content:center;
     align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
     height: 110px;
-    
+    background-color: black;
+    border-bottom: 3px solid white;
 
 
 }
@@ -43,6 +50,10 @@ body{
     cursor: pointer;
     color: white;
     
+    
+}
+a:hover{
+    color:blue;
 }
 
 /*----hero----*/
@@ -84,23 +95,78 @@ body{
     margin: 15px 0;
 }
 .hero-para button{
-    padding: 12px 25px;
-    background: blue;
-    color: white;
+    margin-top: 25px;
+    padding: 15px 40px;
     border: none;
-    border-radius: 8px;
+    border-radius: 40px;
+    background: linear-gradient(to right,#002fff,#4b00ff);
+    color: white;
+    font-weight: bold;
     cursor: pointer;
     
 }
+
 /*-----video-----*/
 
 .video{
     display: flex;
     justify-content: center;
     align-content: center;
-    height: 400px;
-    width: 400px;
-    background-color: aqua;
+    height: 600px;
+    width: 100%;
+    
+}
+.video video{
+    width:900px;
+    height:500px;
+    padding-top: 100px;
 }
 
 
+/*-----products-----*/
+
+
+.products{
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+    position: relative;
+}
+.products h1{
+    font-size: 60px;
+    margin-bottom: 60px;
+    font-weight: bold;
+}
+.product  h2{
+    margin-top: 30px;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.product-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.product{
+    position: relative;
+}
+.product img{
+    width:400px;
+    position:relative;
+    z-index: 2;
+
+}
+.product button{
+    margin-top: 25px;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 40px;
+    background: linear-gradient(to right,#002fff,#4b00ff);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+   
+    
+}
